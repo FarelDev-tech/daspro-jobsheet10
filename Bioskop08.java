@@ -15,9 +15,9 @@ public class Bioskop08 {
         System.out.printf("%s \t %s\n", penonton[1][0], penonton[1][1]);
 
         System.out.println("Penonton pada baris ke-3: ");
-        // Memodifikasi nama penonton baris ke-3 pada soal no.7
-        for (int i = 0; i < penonton[2].length; i++) {
-            System.out.printf("%s \t", penonton[2][i]);
+        // Memodifikasi soal no.7 dengan menggunakan enhanced for (foreach) pada soal no.8
+        for (String i : penonton[2]) {
+            System.out.printf("%s \t", i);
         }
         System.out.printf("%s \t %s\n", penonton[3][0], penonton[3][1]);
 
