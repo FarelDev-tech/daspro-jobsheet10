@@ -13,7 +13,12 @@ public class Bioskop08 {
 
         System.out.printf("%s \t %s\n", penonton[0][0], penonton[0][1]);
         System.out.printf("%s \t %s\n", penonton[1][0], penonton[1][1]);
-        System.out.printf("%s \t %s\n", penonton[2][0], penonton[2][1]);
+
+        System.out.println("Penonton pada baris ke-3: ");
+        // Memodifikasi nama penonton baris ke-3 pada soal no.7
+        for (int i = 0; i < penonton[2].length; i++) {
+            System.out.printf("%s \t", penonton[2][i]);
+        }
         System.out.printf("%s \t %s\n", penonton[3][0], penonton[3][1]);
 
         // Penambahan kode untuk menampilkan jumlah baris dan kolom pada soal no.4
