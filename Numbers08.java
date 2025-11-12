@@ -7,8 +7,14 @@ public class Numbers08 {
         myNumbers[1] = new int[3];
         myNumbers[2] = new int[1];
 
+        // Mengisi array dengan nilai
         for (int i = 0; i < myNumbers.length; i++) {
             System.out.print(Arrays.toString(myNumbers[i]));
+        }
+
+        // Menampilkan panjang setiap baris
+        for (int i = 0; i < myNumbers.length; i++) {
+            System.out.println("Panjang baris ke-" + (i+1) + ": " + myNumbers[i].length); 
         }
     }
 }
