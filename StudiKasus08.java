@@ -18,6 +18,12 @@ public class StudiKasus08 {
             for (int j = 0; j < jmlPertanyaan; j++) {
                 System.out.print("  Jawaban Pertanyaan " + (j + 1) + " (1-5): ");
                 survey[i][j] = sc.nextInt();
+
+                // Handle jawaban pertanyaan diluar range 1-5
+                if (survey[i][j] < 1 || survey[i][j] > 5) {
+                    System.out.println("    Jawaban tidak valid, harus antara 1-5.");
+                    j--; // Untuk mengulangi pertanyaan yang sama
+                }
             }
         }
         System.out.println("Input data selesai");
