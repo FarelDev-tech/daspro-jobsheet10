@@ -15,5 +15,12 @@ public class Bioskop08 {
         System.out.printf("%s \t %s\n", penonton[1][0], penonton[1][1]);
         System.out.printf("%s \t %s\n", penonton[2][0], penonton[2][1]);
         System.out.printf("%s \t %s\n", penonton[3][0], penonton[3][1]);
+
+        // Penambahan kode untuk menampilkan jumlah baris dan kolom pada soal no.4
+        System.out.println(penonton.length);
+        System.out.println(penonton[0].length);
+        System.out.println(penonton[1].length);
+        System.out.println(penonton[2].length);
+        System.out.println(penonton[3].length);
     }
 }
