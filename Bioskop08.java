@@ -18,9 +18,10 @@ public class Bioskop08 {
 
         // Penambahan kode untuk menampilkan jumlah baris dan kolom pada soal no.4
         System.out.println(penonton.length);
-        System.out.println(penonton[0].length);
-        System.out.println(penonton[1].length);
-        System.out.println(penonton[2].length);
-        System.out.println(penonton[3].length);
+        
+        // Memodifikasi kode pada no.4 untuk sama menampilkan jumlah baris dan kolom pada soal no.5 menggunakan perulangan
+        for (int i = 0; i < penonton.length; i++) {
+            System.out.println("Panjang baris ke-" + (i + 1) + ": " + penonton[i].length);   
+        }
     }
 }
