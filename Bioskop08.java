@@ -11,15 +11,14 @@ public class Bioskop08 {
         penonton[3][0] = "Gisel";
         penonton[3][1] = "Hana"; // Penambahan baru data penonton pada soal no.3
 
-        System.out.printf("%s \t %s\n", penonton[0][0], penonton[0][1]);
-        System.out.printf("%s \t %s\n", penonton[1][0], penonton[1][1]);
-
-        System.out.println("Penonton pada baris ke-3: ");
-        // Memodifikasi soal no.7 dengan menggunakan enhanced for (foreach) pada soal no.8
-        for (String i : penonton[2]) {
-            System.out.printf("%s \t", i);
+        // Memodifikasi kode utk menampilkan data penonton menggunakan perulangan foreach pada soal no.9
+        System.out.println("Data Penonton Bioskop:");
+        for (String[] baris : penonton) {
+            for (String nama : baris) {
+                System.out.print(nama + " ");
+            }
+            System.out.println();
         }
-        System.out.printf("%s \t %s\n", penonton[3][0], penonton[3][1]);
 
         // Penambahan kode untuk menampilkan jumlah baris dan kolom pada soal no.4
         System.out.println(penonton.length);
